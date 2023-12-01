@@ -1,0 +1,126 @@
+:root {
+  --highlight: #ffcb15;
+  --header-color: white;
+  --text-color: white;
+  --highlight-bright: #ffdd6b;
+  --highlight-alt: #dcbf5a;
+}
+
+
+
+video {
+  position: inherit;
+  min-width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+video {
+  height: 100px;
+  width: 100%;
+  object-fit: fill;
+}
+
+#header {
+  position: sticky;
+  top: 0;
+}
+
+#background {
+  width: 100%;
+  position: fixed;
+  top: -55vh;
+  z-index: 1;
+  filter: opacity(0.5);
+}
+
+#main {
+  z-index: 2 !important;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: var(--text-color);
+  background-color: black;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--highlight-bright) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--highlight-bright);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--highlight-alt);
+}
+
+::-webkit-scrollbar-track {
+
+  background-color: transparent;
+}
+
+a,
+span {
+  color: var(--highlight);
+}
+
+h1 {
+  font-size: 150%;
+  margin: 0;
+  color: black;
+}
+
+h2 {
+  color: var(--header-color);
+}
+
+p {
+  color: var(--text-color)
+}
+
+header {
+  background-color: transparent;
+  color: black;
+  padding: 20px;
+  text-align: left;
+  top: 0;
+  margin: 0;
+
+}
+
+nav ul {
+  background-color: transparent;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+footer {
+  background-color: black color: black;
+  text-align: center;
+  padding: 10px;
+}
